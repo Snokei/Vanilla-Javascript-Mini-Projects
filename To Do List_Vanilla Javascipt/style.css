@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(100deg, #800080
+,
+    #ffc0cb);
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,form{
+   min-height: 18vh; 
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+}
+form button{
+    color: #800080;
+    background: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+form button:hover{
+    background: #00c3ff;
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn, .complete-btn{
+    background-color: #00c3ff;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+.complete-btn{
+    background: springgreen;
+}
+
+.trash-btn{
+    background: tomato;
+}
+
+.todo-item{
+    padding: 0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.Completed{
+    text-decoration: wavy;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}

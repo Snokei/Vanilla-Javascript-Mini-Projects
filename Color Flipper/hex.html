@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .btn {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            
+        }
+
+        #new {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            text-align: center;
+                        
+        }
+
+        #nn ul{
+            margin-left: 500px;
+        }
+
+        #flip{
+            color:black;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+
+            
+        }
+
+        #nav{
+            font-style: italic;
+            display: block;
+            float: right;
+            padding-left: 70px; 
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar navbar-expand-lg navbar-light btn-light shadow" id="nn">
+        <ul class="navbar-nav">
+            <h3 id="flip" class="text-center font -monospace">Color Flipper</h3>
+            <li class="nav-item active">
+              <a class="nav-link" id="nav" href="Color Flipper.html">Simple <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav" href="hex.html">Hex</a>
+            </li>
+
+    </div>
+
+    <div class="container ">
+        
+    </div>
+
+    <div class="container" id="new">
+        <h2 class="align-content-center">Background Color :</h2>
+        <h3><span class="color">
+            #FFFFFF
+        </span></h3>
+        <button id="btn" class="btn btn-outline-success align-content-center font-weight-bold">Click Me</button>
+    </div>
+
+    <script>
+
+        const colors = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"];
+
+        const btn = document.getElementById('btn');
+        const color = document.querySelector('.color');
+
+        
+
+        btn.addEventListener('click', change);
+
+        function change(){
+            var hexcolor = "#";
+            for(i=0; i<6; i++){
+
+                hexcolor = hexcolor + colors[getrandomNumber()];
+                
+            }            
+            color.textContent = hexcolor;
+            document.body.style.backgroundColor = hexcolor;
+
+        }
+        function getrandomNumber(){
+
+            return Math.floor(Math.random() * colors.length);
+        }
+
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

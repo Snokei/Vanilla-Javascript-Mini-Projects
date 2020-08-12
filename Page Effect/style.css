@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e7a7a7;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 1s ease;
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    height: 100vh;          /* This make content in center with responsivness */
+}
+
+.intro-text h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.intro-text p{
+    font-size: 22px;
+}
+
+/* Page 2 Styling */
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+section img{
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.page2{
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+
+.page2 h1{
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.bg-active{
+    background-color: white;
+}
+
+
+.cng{
+    background-color: #101010;
+    color: white;
+}
+
+
+.bg-active2{
+   
+    background-color: white;
+    color: black;
+}
+
+
+/* Page 3*/
+.black-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+   
+}
+
+.page3{
+    align-items: center;
+    text-align: center;
+    width: 70%;
+  
+    
+}
+
+.page3 h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+    
+}
+
+
+
